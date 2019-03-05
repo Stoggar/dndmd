@@ -75,12 +75,12 @@ def get_html_filename(mark_path):
 
 
 arg_parser = argparse.ArgumentParser()
-arg_parser.add_argument('mark_filename')
+arg_parser.add_argument('markdown_filename')
 arg_parser.add_argument('-f', '--format', default='item',
         help='format of html output')
 args = arg_parser.parse_args()
 
 if args.format == 'item':
-    main(args.mark_filename, THIS_DIR / ITEM_PARENT_TEMPLATE)
+    main(args.markdown_filename, THIS_DIR / ITEM_PARENT_TEMPLATE)
 
 
